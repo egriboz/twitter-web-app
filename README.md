@@ -1,1 +1,1 @@
-# twitter-web-clone
+# twitter web clone (react&nextjs)
