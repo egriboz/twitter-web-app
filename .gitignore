@@ -1,0 +1,61 @@
+.DS_Store
+*.sqlite3
+# __init__.py
+__pycache__/
+collectedstatic/
+# migrations/
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python Basics
+*.py[cod]
+__pycache__
+
+### Text editor generated files and folders ###
+# SublimeText
+*.sublime-workspace
+*.sublime-project
+
+# Pycharm
+.idea
+
+# Vim
+*~
+*.swp
+*.swo
+
+### next ###
+.next
+
+# npm
+node_modules/
+
+# Compass
+.sass-cache
+
+# Logs
+*.log
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+htmlcov
+
+
+# Translations
+*.pot
+
+# Project Specific
+*.sqlite3
+/project/media_root/uploads/*
+/media/
+!.gitkeep
+development.log
+vendor/bundle
+*/static/vendor
+static_root
