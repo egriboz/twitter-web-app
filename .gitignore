@@ -1,5 +1,4 @@
 .DS_Store
-.vscode
 
 ### OSX ###
 .DS_Store
@@ -14,6 +13,7 @@ __pycache__
 # SublimeText
 *.sublime-workspace
 *.sublime-project
+.vscode
 
 # Pycharm
 .idea
