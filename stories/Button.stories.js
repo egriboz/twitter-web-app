@@ -1,21 +1,25 @@
-import React from 'react';
+import React from 'react'
 
-// import { Button } from './Button';
+// import { Button } from './Button'
 
-import Button from "../components/button"
+import Button from '../components/button'
+import NavItemButton from '../components/navitem-button'
+import Navigation from '../components/navigation'
+import { Home } from '../components/icons'
+import TitleBold from '../components/title-bold'
 
 export default {
-  title: 'Button',
-  component: Button,
-};
+  title: 'Buttons'
+}
 
-export const Primary = () => (
-  <Button>
-    <span role="img" aria-label="so cool">
-      😍 😄 🔥 🎁 💯 
-    </span>
-  </Button>
+export const Default = () => <Button>Save</Button>
+export const MenuButton = () => (
+  <NavItemButton>
+    <Home />
+    <TitleBold>Home</TitleBold>
+  </NavItemButton>
 )
+export const Menu = () => <Navigation selectedKey="home" />
 
 // export default {
 //   title: 'Example/Button',

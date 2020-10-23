@@ -1,4 +1,4 @@
-.error {
-  color: white;
-  background-color: rebeccapurple;
+.button {
+  cursor: pointer;
+  background-color: transparent;
 }
