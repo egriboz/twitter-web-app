@@ -1,7 +1,7 @@
 import React from 'react'
 
 import NavItemButton from './navitem-button'
-import TitleBold from './title-bold'
+import TextTitle from './text-title'
 
 import {
   Bookmark,
@@ -24,35 +24,35 @@ function Navigation({ selectedKey }) {
       </NavItemButton>
       <NavItemButton selected={selectedKey === 'home'}>
         <Home />
-        <TitleBold>Home</TitleBold>
+        <TextTitle>Home</TextTitle>
       </NavItemButton>
       <NavItemButton selected={selectedKey === 'explore'}>
         <Explore />
-        <TitleBold>Explore</TitleBold>
+        <TextTitle>Explore</TextTitle>
       </NavItemButton>
       <NavItemButton notify={15} selected={selectedKey === 'notification'}>
         <Notification />
-        <TitleBold>Notification</TitleBold>
+        <TextTitle>Notification</TextTitle>
       </NavItemButton>
       <NavItemButton selected={selectedKey === 'messages'}>
         <Messages />
-        <TitleBold>Messages</TitleBold>
+        <TextTitle>Messages</TextTitle>
       </NavItemButton>
       <NavItemButton selected={selectedKey === 'bookmark'}>
         <Bookmark />
-        <TitleBold>Bookmark</TitleBold>
+        <TextTitle>Bookmark</TextTitle>
       </NavItemButton>
       <NavItemButton selected={selectedKey === 'lists'}>
         <Lists />
-        <TitleBold>Lists</TitleBold>
+        <TextTitle>Lists</TextTitle>
       </NavItemButton>
       <NavItemButton selected={selectedKey === 'profile'}>
         <Profile />
-        <TitleBold>Profile</TitleBold>
+        <TextTitle>Profile</TextTitle>
       </NavItemButton>
       <NavItemButton selected={selectedKey === 'more'}>
         <More />
-        <TitleBold>More</TitleBold>
+        <TextTitle>More</TextTitle>
       </NavItemButton>
     </nav>
   )

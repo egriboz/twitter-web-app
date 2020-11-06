@@ -1,0 +1,8 @@
+.title {
+  font-size: 19px;
+  color: var(--c-text-color);
+  display: block;
+}
+.bold {
+  font-weight: bold;
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 // import { Button } from './Button'
 
@@ -6,17 +6,28 @@ import Button from '../components/button'
 import NavItemButton from '../components/navitem-button'
 import Navigation from '../components/navigation'
 import { Home } from '../components/icons'
-import TitleBold from '../components/title-bold'
+import TextTitle from '../components/text-title'
+import TweetBtn from '../components/tweet-button'
+import Stack from '../components/stack'
 
 export default {
   title: 'Buttons'
 }
 
 export const Default = () => <Button>Save</Button>
+export const TweetButton = () => (
+  <Stack column gap={10}>
+    <TweetBtn>Tweet</TweetBtn>
+    <TweetBtn full>Tweet Full</TweetBtn>
+    <TweetBtn full large>
+      Tweet Large
+    </TweetBtn>
+  </Stack>
+)
 export const MenuButton = () => (
   <NavItemButton>
     <Home />
-    <TitleBold>Home</TitleBold>
+    <TextTitle>Home</TextTitle>
   </NavItemButton>
 )
 export const Menu = () => <Navigation selectedKey="home" />

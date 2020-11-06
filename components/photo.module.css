@@ -1,0 +1,8 @@
+.photo {
+  width: 48px;
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 99px;
+  }
+}
