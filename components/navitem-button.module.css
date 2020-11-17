@@ -22,7 +22,7 @@
   padding: 0 6px;
   height: 17px;
   background-color: var(--c-theme);
-  color: var(--c-primary);
+  color: var(--c-text-color); /*var(--c-primary);*/
   border: 1px solid var(--c-text-color);
   border-radius: 17px;
   font-size: 11px;

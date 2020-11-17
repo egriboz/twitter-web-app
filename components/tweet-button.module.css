@@ -3,6 +3,7 @@
   color: var(--c-text-color);
   padding: 0 15px;
   height: 40px;
+  min-width: 40px;
   font-weight: bold;
   &:hover {
     background-color: var(--c-theme);
@@ -14,4 +15,5 @@
 }
 .largeButton {
   height: 50px;
+  min-width: 50px;
 }

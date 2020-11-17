@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 
 // import { Button } from './Button'
+// add on
+import { withKnobs, boolean } from '@storybook/addon-knobs'
 
 import Button from '../components/button'
 import NavItemButton from '../components/navitem-button'
@@ -11,7 +13,8 @@ import TweetBtn from '../components/tweet-button'
 import Stack from '../components/stack'
 
 export default {
-  title: 'Buttons'
+  title: 'Buttons',
+  decorators: [withKnobs]
 }
 
 export const Default = () => <Button>Save</Button>
@@ -30,7 +33,10 @@ export const MenuButton = () => (
     <TextTitle>Home</TextTitle>
   </NavItemButton>
 )
-export const Menu = () => <Navigation selectedKey="home" />
+export const Menu = () => {
+  const flat = boolean('Flat', false)
+  return <Navigation flat={flat} selectedKey="home" />
+}
 
 // export default {
 //   title: 'Example/Button',

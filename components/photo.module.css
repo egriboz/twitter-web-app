@@ -1,5 +1,4 @@
 .photo {
-  width: 48px;
   flex-shrink: 0;
   img {
     display: block;
