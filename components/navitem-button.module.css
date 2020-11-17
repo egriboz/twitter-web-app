@@ -12,6 +12,9 @@
 }
 .navButtonSelected {
   color: var(--c-theme);
+  h2 {
+    color: var(--c-theme);
+  }
 }
 .notify {
   display: flex;

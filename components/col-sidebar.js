@@ -9,9 +9,11 @@ function Sidebar({ flat }) {
   return (
     <div className={cn(styles.sidebar)}>
       <Navigation flat={flat} />
-      <TweetButton large full={!flat}>
-        {flat ? 'a' : 'Tweet'}
-      </TweetButton>
+      <div className={styles.tweetBtn}>
+        <TweetButton large full={!flat}>
+          {flat ? 'a' : 'Tweet'}
+        </TweetButton>
+      </div>
       <div className={styles.profile}>
         <ProfileBox flat={flat} />
       </div>

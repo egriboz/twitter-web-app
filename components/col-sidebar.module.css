@@ -8,6 +8,18 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  @media (--d) {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: flex-start;
+  }
+}
+.tweetBtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media (--d) {
+    width: 100%;
+  }
 }
 .profile {
   margin-top: auto;
