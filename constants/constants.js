@@ -28,13 +28,15 @@ export default {
 export const MENU = [
   {
     key: 'twitter',
-    icon: <Icon.Twitter style={{ fontSize: 30 }} />,
-    iconSelected: <Icon.Twitter style={{ fontSize: 30 }} />,
+    path: '/',
+    icon: <Icon.Twitter style={{ fontSize: 30, color: 'white' }} />,
+    iconSelected: <Icon.Twitter style={{ fontSize: 30, color: 'white' }} />,
     title: '',
     notify: 0
   },
   {
     key: 'home',
+    path: '/',
     icon: <Icon.Home />,
     iconSelected: <Icon.HomeFill />,
     title: 'Home',
@@ -42,34 +44,39 @@ export const MENU = [
   },
   {
     key: 'explore',
+    path: '/explore',
     icon: <Icon.Explore />,
     iconSelected: <Icon.ExplorerFill />,
     title: 'Explore',
     notify: 0
   },
   {
-    key: 'notification',
+    key: 'notifications',
+    path: '/notifications',
     icon: <Icon.Notification />,
     iconSelected: <Icon.NotificationFill />,
-    title: 'Notification',
+    title: 'Notifications',
     notify: 27
   },
   {
     key: 'messages',
+    path: '/messages',
     icon: <Icon.Messages />,
     iconSelected: <Icon.MessagesFill />,
     title: 'Messages',
     notify: 0
   },
   {
-    key: 'bookmark',
+    key: 'bookmarks',
+    path: '/bookmarks',
     icon: <Icon.Bookmark />,
     iconSelected: <Icon.BookmarkFill />,
-    title: 'Bookmark',
+    title: 'Bookmarks',
     notify: 0
   },
   {
     key: 'lists',
+    path: '/lists',
     icon: <Icon.Lists />,
     iconSelected: <Icon.ListsFill />,
     title: 'Lists',
@@ -77,6 +84,7 @@ export const MENU = [
   },
   {
     key: 'profile',
+    path: '/profile',
     icon: <Icon.Profile />,
     iconSelected: <Icon.ProfileFill />,
     title: 'Profile',
@@ -84,6 +92,7 @@ export const MENU = [
   },
   {
     key: 'more',
+    path: '/more',
     icon: <Icon.More />,
     iconSelected: <Icon.More />,
     title: 'More',

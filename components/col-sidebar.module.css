@@ -10,7 +10,7 @@
   }
   @media (--d) {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 46px;
     align-items: flex-start;
   }
 }

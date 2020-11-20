@@ -1,9 +1,12 @@
 .nav {
-  button {
-    margin-left: 0px;
-    & + button {
-      margin-top: 8px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navButton {
+  margin-left: 0px;
+  & + & {
+    margin-top: 8px;
   }
 }
 /* .nav button:before,
