@@ -9,6 +9,13 @@
   h2 {
     margin: 0 15px 0 20px;
   }
+  /*tanımlanan class ismini uniqe bir isime çevirmemesi için glabol kullanılır*/
+  &:global(.twitter) {
+    color: var(--c-theme);
+    :global(html:not(.light)) & {
+      color: white;
+    }
+  }
 }
 .navButtonSelected {
   color: var(--c-theme);
