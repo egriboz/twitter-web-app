@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
-import Button from './button'
+import Button from '../button'
 import styles from './navitem-button.module.css'
 
 function NavItemButton({

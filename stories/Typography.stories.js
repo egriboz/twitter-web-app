@@ -1,7 +1,7 @@
 import React from 'react'
-import TextBody from '../components/text-body'
+import TextBody from '../components/text/body'
 
-import TextTitle from '../components/text-title'
+import TextTitle from '../components/text/title'
 
 export default {
   title: 'Typography'

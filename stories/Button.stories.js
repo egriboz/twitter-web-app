@@ -5,10 +5,10 @@ import React, { Fragment } from 'react'
 import { withKnobs, boolean } from '@storybook/addon-knobs'
 
 import Button from '../components/button'
-import NavItemButton from '../components/navitem-button'
-import Navigation from '../components/navigation'
+import NavItemButton from '../components/navigation/navitem-button'
+import Navigation from '../components/navigation/navigation'
 import { Home } from '../components/icons'
-import TextTitle from '../components/text-title'
+import TextTitle from '../components/text/title'
 import TweetBtn from '../components/tweet-button'
 import Stack from '../components/stack'
 

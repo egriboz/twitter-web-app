@@ -1,14 +1,12 @@
-const { isResSent } = require('next/dist/next-server/lib/utils')
-
 import React, { Fragment } from 'react'
 import cn from 'classnames'
 
 import styles from './profile-box.module.css'
 
-import Photo from './photo'
-import Button from './button'
-import { ArrowBottom } from './icons'
-import TextBody from './text-body'
+import Photo from '../photo'
+import Button from '../button'
+import { ArrowBottom } from '../icons'
+import TextBody from '../text/body'
 
 function ProfileBox({
   flat = false,

@@ -1,9 +1,9 @@
 import React from 'react'
 import cn from 'classnames'
-import styles from './col-sidebar.module.css'
-import Navigation from './navigation'
-import TweetButton from './tweet-button'
-import ProfileBox from './profile-box'
+import styles from './sidebar.module.css'
+import Navigation from '../navigation/navigation'
+import TweetButton from '../tweet-button'
+import ProfileBox from '../profile-box'
 
 function Sidebar({ flat }) {
   return (
