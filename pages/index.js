@@ -1,68 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
+import useSWR from 'swr'
 
 import Layout from '../components/layout/'
 import Tweet from '../components/tweet'
+import fetcher from '../lib/fetch'
 
 function HomePage() {
+  const { data, error } = useSWR('/api/tweet', fetcher)
+
+  // React.useEffect(() => {
+  //   async function getData() {
+  //     const response = await fetch('http://localhost:3000/api/tweet')
+  //     const data = await response.json()
+  //     console.log(data)
+  //     dataSet(data.statuses)
+  //     dataLoadingSet(false)
+  //   }
+  //   getData()
+  // }, [])
+
   return (
     <Layout>
-      <Tweet
-        name="Fatih Eğriboz"
-        slug="egriboz"
-        datetime={new Date('2020-10-14')}
-        text={`Lorem ipsum 
-        sit dolor amet`}
-      ></Tweet>
-      <Tweet
-        name="Fatih Eğriboz"
-        slug="egriboz"
-        datetime={new Date('2020-10-14')}
-        text={`The most infamous CSS rule is:
+      {!data && <p>Loading...</p>}
 
-        button:focus {
-          outline: none;
-        }
-This style removes the "ugly" focus ring on inputs and links, but it means keyboard users can't navigate; it totally breaks the experience for them (and any non-mouse users)
-        `}
-      ></Tweet>
-      <Tweet
-        name="Fatih Eğriboz"
-        slug="egriboz"
-        datetime={new Date('2020-10-14')}
-        text={`Lorem ipsum 
-        sit dolor amet`}
-      ></Tweet>
-      <Tweet
-        name="Fatih Eğriboz"
-        slug="egriboz"
-        datetime={new Date('2020-10-14')}
-        text={`The most infamous CSS rule is:
-
-        button:focus {
-          outline: none;
-        }
-This style removes the "ugly" focus ring on inputs and links, but it means keyboard users can't navigate; it totally breaks the experience for them (and any non-mouse users)
-        `}
-      ></Tweet>
-      <Tweet
-        name="Fatih Eğriboz"
-        slug="egriboz"
-        datetime={new Date('2020-10-14')}
-        text={`Lorem ipsum 
-        sit dolor amet`}
-      ></Tweet>
-      <Tweet
-        name="Fatih Eğriboz"
-        slug="egriboz"
-        datetime={new Date('2020-10-14')}
-        text={`The most infamous CSS rule is:
-
-        button:focus {
-          outline: none;
-        }
-This style removes the "ugly" focus ring on inputs and links, but it means keyboard users can't navigate; it totally breaks the experience for them (and any non-mouse users)
-        `}
-      ></Tweet>
+      {data?.statuses.map((tweet) => {
+        return <Tweet key={tweet.id} {...tweet} />
+      })}
     </Layout>
   )
 }
