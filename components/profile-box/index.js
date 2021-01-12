@@ -13,6 +13,7 @@ function ProfileBox({
   name = 'Fatih Eğriboz',
   slug = 'egriboz'
 }) {
+  console.log(flat + 'is flat ?')
   return (
     <Button className={cn([styles.box])}>
       <Photo size={40} />
