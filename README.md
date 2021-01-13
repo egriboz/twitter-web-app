@@ -1,4 +1,4 @@
-# twitter Web App (react&nextjs)
+# Twitter Web App (react&nextjs)
 
 npm run dev
 
