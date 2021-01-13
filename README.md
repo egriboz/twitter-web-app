@@ -6,5 +6,5 @@ npm run storybook
 
 ### Preview
 
-- [App preview](https://twitter-web-app-phi.vercel.app)
-- [Storybook preview](https://twitter-web-app-phi.vercel.app/ui/index.html)
+- [App preview](https://twitter-web-app.vercel.app)
+- [Storybook preview](https://twitter-web-app.vercel.app/ui/index.html)
