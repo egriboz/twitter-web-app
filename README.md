@@ -1,4 +1,4 @@
-# twitter web clone (react&nextjs)
+# twitter Web App (react&nextjs)
 
 npm run dev
 
