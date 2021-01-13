@@ -17,6 +17,7 @@ function Tweet({
   user,
   in_reply_to_status_id_str
 }) {
+  console.log('text====>' + text)
   // ...props : name, slug, text, datetime, children
   // console.log(user.name)
 

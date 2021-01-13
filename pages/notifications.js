@@ -7,7 +7,7 @@ import fetcher from '../lib/fetch'
 
 function NotificationPage() {
   const { data, error } = useSWR('/api/name', fetcher)
-
+  console.log(data)
   // React.useEffect(() => {
   //   async function getData() {
   //     const response = await fetch('http://localhost:3000/api/tweet')
@@ -21,10 +21,15 @@ function NotificationPage() {
 
   return (
     <Layout>
-      <div>deneme</div>
-      {data?.statuses.map((name) => {
-        return <Name key={name.id} {...name} />
+      <h1>Followers</h1>
+
+      {/* {console.log(data)} */}
+      {/* return <Name key={name} {...name} /> */}
+
+      {data?.ids.map((name) => {
+        return <div key={name}> {name} </div>
       })}
+
       {/* {!data && <p>Loading...</p>}
 
       {data?.statuses.map((name) => {

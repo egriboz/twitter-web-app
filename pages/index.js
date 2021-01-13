@@ -10,7 +10,7 @@ import fetcher from '../lib/fetch'
 
 function HomePage() {
   const { data, error } = useSWR('/api/tweet', fetcher)
-
+  console.log(data.statuses)
   // React.useEffect(() => {
   //   async function getData() {
   //     const response = await fetch('http://localhost:3000/api/tweet')
