@@ -8,7 +8,7 @@ import * as Icon from '../icons'
 import cn from 'classnames'
 
 function Name({ ids, next_cursor }) {
-  console.log(ids)
+  // console.log(ids)
   // ...props : name, slug, text, datetime, children
   // console.log(user.name)
   //console.log(...props)

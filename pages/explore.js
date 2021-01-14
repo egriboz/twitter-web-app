@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import useSWR from 'swr'
 
+import styles from './index.module.css'
+
 import Layout from '../components/layout/'
+import Loading from '../components/loading'
 import Tweet from '../components/tweet'
 import fetcher from '../lib/fetch'
 
@@ -21,7 +24,11 @@ function ExplorePage() {
 
   return (
     <Layout>
-      {!data && <p>Loading...</p>}
+      {!data && (
+        <div className={styles.loading}>
+          <Loading />
+        </div>
+      )}
 
       {data?.statuses.map((tweet) => {
         return <Tweet key={tweet.id} {...tweet} />

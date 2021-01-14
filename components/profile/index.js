@@ -7,7 +7,7 @@ import IconButton from '../button/icon'
 import * as Icon from '../icons'
 import cn from 'classnames'
 
-function Tweet({
+function ProfileTweet({
   created_at,
   retweet_count,
   favorite_count,
@@ -83,4 +83,4 @@ function Tweet({
   )
 }
 
-export default Tweet
+export default ProfileTweet
