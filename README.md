@@ -1,12 +1,19 @@
+
 ### Twitter Web App (react&nextjs)
 
 ___
-```
+```bash
+
+npm install
 npm run dev
-```
-```
+# or
+yarn
+yarn dev
+
+# and
 npm run storybook
 ```
+
 
 ### Preview
 
@@ -16,3 +23,4 @@ npm run storybook
 ___
 
 *[video tutorial](https://www.youtube.com/playlist?list=PLadt0EaV4m3AOZPbybHx0h2aEmw5ibZGx) by ademilter*
+
