@@ -8,3 +8,6 @@ npm run storybook
 
 - [App preview](https://twitter-web-app.vercel.app)
 - [Storybook preview](https://twitter-web-app.vercel.app/ui/index.html)
+
+
+[video tutorial by ademilter: ](https://www.youtube.com/playlist?list=PLadt0EaV4m3AOZPbybHx0h2aEmw5ibZGx/?target=_blank)
