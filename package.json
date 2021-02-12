@@ -1,18 +1,23 @@
 {
   "name": "twitter-web-clone",
   "version": "1.0.0",
-  "description": "",
+  "description": "A clone example of Twitter",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build-storybook && next build",
+    "build": "yarn run build-storybook && next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o public/ui",
     "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\""
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "twitter",
+    "webapp",
+    "nextjs",
+    "react"
+  ],
+  "author": "@egriboz",
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.6",
