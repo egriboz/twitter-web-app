@@ -11,7 +11,7 @@ function Sidebar({ flat }) {
       <Navigation flat={flat} />
       <div className={styles.tweetBtn}>
         <TweetButton large full={!flat}>
-          {flat ? 'a' : 'Tweet'}
+          {flat ? 'T' : 'Tweet'}
         </TweetButton>
       </div>
       <div className={styles.profile}>

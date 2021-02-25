@@ -1,0 +1,10 @@
+.box {
+  padding: 10px 15px;
+  background: #111;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--c-border-color);
+}
+.slug {
+  color: var(--c-gray);
+}
