@@ -5,7 +5,14 @@
   --c-text-color: #000;
   --c-border-color: rgb(230, 236, 240);
   --c-gray: #6e767d;
-  --c-dark-gray: #202327;
+  --c-dark-gray: rgba(230, 236, 240, 0.2);
+  --c-dark-gray40: rgba(230, 236, 240, 0.4);
+  --c-dark-gray50: rgba(230, 236, 240, 0.5);
+
+  --c-border-trend: #ebeef0;
+  --c-bg-trend: #eff1f2;
+  --c-bghover-trend: #f7f9fa;
+
   --fade: 120ms;
 }
 
@@ -14,7 +21,13 @@
   --c-text-color: #fff;
   --c-border-color: #2f3336;
   --c-gray: #6e767d;
-  --c-dark-gray: #202327;
+  --c-dark-gray: rgba(230, 236, 240, 0.1);
+  --c-dark-gray40: rgba(230, 236, 240, 0.4);
+  --c-dark-gray50: rgba(230, 236, 240, 0.5);
+
+  --c-border-trend: #39444d;
+  --c-bg-trend: #192734;
+  --c-bghover-trend: #202e3a;
 }
 
 .dark:root {
@@ -22,5 +35,11 @@
   --c-text-color: #fff;
   --c-border-color: #2f3336;
   --c-gray: #6e767d;
-  --c-dark-gray: #202327;
+  --c-dark-gray: rgba(230, 236, 240, 0.1);
+  --c-dark-gray40: rgba(230, 236, 240, 0.4);
+  --c-dark-gray50: rgba(230, 236, 240, 0.5);
+
+  --c-border-trend: #2f3336;
+  --c-bg-trend: #15181c;
+  --c-bghover-trend: #1c1f23;
 }

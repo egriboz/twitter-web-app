@@ -1,9 +1,39 @@
 .box {
+  position: relative;
+}
+.box a {
+  display: block;
   padding: 10px 15px;
-  background: #111;
+  color: var(--c-text-color);
+  background: var(--c-dark-gray);
   border-bottom: 1px;
   border-style: solid;
   border-color: var(--c-border-color);
+  text-decoration: none;
+  transition: background var(--fade);
+}
+.box:hover a {
+  color: var(--c-text-color);
+  background: var(--c-dark-gray40);
+  border-color: var(--c-border-color);
+}
+.box .icon {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 15px;
+  width: 1em;
+  height: 1em;
+  color: var(--c-gray);
+  background: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background var(--fade);
+}
+.box .icon:hover {
+  cursor: pointer;
+
+  background: var(--c-dark-gray50);
 }
 .slug {
   color: var(--c-gray);

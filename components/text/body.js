@@ -6,9 +6,12 @@ import styles from './body.module.css'
 
 function TextBody({ bold = false, className, children, ...props }) {
   return (
-    <p className={cn([styles.body, bold && styles.bold, className])} {...props}>
+    <span
+      className={cn([styles.body, bold && styles.bold, className])}
+      {...props}
+    >
       {children}
-    </p>
+    </span>
   )
 }
 

@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react'
 import cn from 'classnames'
+
 import styles from './list.module.css'
 
 import TextBody from '../text/body'
+import Button from '../button'
+import { MoreShort } from '../icons'
 
 function ListBox({
   flat = false,
@@ -14,19 +17,28 @@ function ListBox({
   return (
     <>
       <div className={cn([styles.box])}>
-        <TextBody className={styles.slug}>{location}</TextBody>
-        <TextBody bold>#{tname}</TextBody>
-        <TextBody className={styles.slug}>{slug}</TextBody>
+        <MoreShort className={cn([styles.icon])} />
+        <a href="#">
+          <TextBody className={styles.slug}>{location}</TextBody>
+          <TextBody bold>#{tname}</TextBody>
+          <TextBody className={styles.slug}>{slug}</TextBody>
+        </a>
       </div>
       <div className={cn([styles.box])}>
-        <TextBody className={styles.slug}>{location}</TextBody>
-        <TextBody bold>#{tname}</TextBody>
-        <TextBody className={styles.slug}>{slug}</TextBody>
+        <MoreShort className={cn([styles.icon])} />
+        <a href="#">
+          <TextBody className={styles.slug}>{location}</TextBody>
+          <TextBody bold>#{tname}</TextBody>
+          <TextBody className={styles.slug}>{slug}</TextBody>
+        </a>
       </div>
       <div className={cn([styles.box])}>
-        <TextBody className={styles.slug}>{location}</TextBody>
-        <TextBody bold>#{tname}</TextBody>
-        <TextBody className={styles.slug}>{slug}</TextBody>
+        <MoreShort className={cn([styles.icon])} />
+        <a href="#">
+          <TextBody className={styles.slug}>{location}</TextBody>
+          <TextBody bold>#{tname}</TextBody>
+          <TextBody className={styles.slug}>{slug}</TextBody>
+        </a>
       </div>
     </>
   )
