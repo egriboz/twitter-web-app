@@ -29,7 +29,7 @@ function ProfilePage() {
           <Loading />
         </div>
       )}
-      <ul>
+      <ul className={styles.list}>
         <li>{data?.statuses[0].user.entities.url.urls[0].expanded_url}</li>
         <li>{data?.statuses[0].user.screen_name}</li>
         <li>{data?.statuses[0].user.name}</li>

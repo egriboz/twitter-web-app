@@ -10,8 +10,8 @@
   --c-dark-gray50: rgba(230, 236, 240, 0.5);
 
   --c-border-trend: #ebeef0;
-  --c-bg-trend: #eff1f2;
-  --c-bghover-trend: #f7f9fa;
+  --c-bg-trend: #f7f9fa;
+  --c-bghover-trend: #eff1f2;
 
   --fade: 120ms;
 }
